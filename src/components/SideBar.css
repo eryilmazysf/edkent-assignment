@@ -8,3 +8,12 @@ ul {
   display: flex;
   align-items: center;
 }
+h5 {
+  padding-left: 2rem;
+}
+.logout {
+  display: flex;
+  align-items: center;
+  margin-top: 150%;
+  padding-left: 2.5rem;
+}

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./Navbar.css";
 import PersonIcon from "@material-ui/icons/Person";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
@@ -19,6 +20,7 @@ import {
 import "@reach/menu-button/styles.css";
 
 function NavBar() {
+  const [range, setRange] = useState(1500);
   return (
     <div className="container">
       <div className="menu-container">
@@ -73,16 +75,16 @@ function NavBar() {
               <div className="menuItem">
                 <PermDeviceInformationIcon style={{ color: "gray" }} />
                 <p>
-                  Lorem ipsum dolor sit <br /> amet consectetur <br />{" "}
+                  Lorem ipsum dolor sit <br /> amet consectetur <br />
                   adipisicing elit. <a href="#">Quos</a> est.
                 </p>
               </div>
             </div>
-            <div onSelect={() => alert("Copy")}>
+            <div onSelect={() => alert("Menu")}>
               <div className="menuItem">
                 <PermDeviceInformationIcon style={{ color: "gray" }} />
                 <p>
-                  Lorem <a href="#">ipsum dolor</a>sit <br /> amet consectetur{" "}
+                  Lorem <a href="#">ipsum dolor</a>sit <br /> amet consectetur
                   <br /> adipisicing elit. est.
                 </p>
               </div>
@@ -115,12 +117,25 @@ function NavBar() {
                 <FavoriteIcon style={{ color: "gray" }} /> <p>Menu 3</p>
               </div>
             </MenuItem>
-            <MenuItem className="menuItems" onSelect={() => alert("Menu")}>
-              <div className="menuItem">
-                <FavoriteIcon style={{ color: "gray" }} /> <p>Menu 4</p>
+            <div className="menuItems">
+              <p style={{}}>
+                <a href="#">Lorem ipsum</a>
+                <span style={{ float: "right", opacity: 0.5 }}>
+                  ({range}/2000)
+                </span>
+              </p>
+
+              <div>
+                <input
+                  type="range"
+                  min="1"
+                  max="2000"
+                  value={range}
+                  onChange={(e) => setRange(e.target.value)}
+                />
               </div>
-            </MenuItem>
-            <MenuItem onSelect={() => alert("Delete")}>
+            </div>
+            <MenuItem onSelect={() => alert("Menu")}>
               <div className="menuItem">
                 <ExitToAppIcon style={{ color: "gray" }} /> <p>Logout</p>
               </div>

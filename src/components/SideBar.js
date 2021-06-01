@@ -7,63 +7,76 @@ function SideBar() {
     <div>
       <h2 className="logo">LOGO</h2>
       <hr />
-      <h3>Heading 1</h3>
+      <h5>Heading 1</h5>
       <ul>
         <li>
           <button className="ListItem">
-            <EventNoteIcon style={{ color: "gray" }} /> <p>Menu Option 1</p>
+            <EventNoteIcon style={{ color: "gray" }} />
+            <span>Menu Option 1</span>
           </button>
         </li>
         <li>
           <button className="ListItem">
-            <EventNoteIcon style={{ color: "gray" }} /> <p>Menu Option 2</p>
+            <EventNoteIcon style={{ color: "gray" }} />
+            <span>Menu Option 2</span>
           </button>
         </li>
         <li>
           <button className="ListItem">
-            <EventNoteIcon style={{ color: "gray" }} /> <p>Menu Option 3</p>
+            <EventNoteIcon style={{ color: "gray" }} />
+            <span>Menu Option 3</span>
           </button>
         </li>
       </ul>
-      <h3>Heading 2</h3>
+      <h5>Heading 2</h5>
       <ul>
         <li>
           <button className="ListItem">
-            <EventNoteIcon style={{ color: "gray" }} /> <p>Menu Option 4</p>
+            <EventNoteIcon style={{ color: "gray" }} />
+            <span>Menu Option 4</span>
           </button>
         </li>
         <li>
           <button className="ListItem">
-            <EventNoteIcon style={{ color: "gray" }} /> <p>Menu Option 5</p>
+            <EventNoteIcon style={{ color: "gray" }} />
+            <span>Menu Option 5</span>
           </button>
         </li>
       </ul>
-      <h3>Heading 3</h3>
+      <h5>Heading 3</h5>
       <ul>
         <li>
           <button className="ListItem">
-            <EventNoteIcon style={{ color: "gray" }} /> <p>Menu Option 6</p>
+            <EventNoteIcon style={{ color: "gray" }} />
+            <span>Menu Option 6</span>
           </button>
         </li>
         <li>
           <button className="ListItem">
-            <EventNoteIcon style={{ color: "gray" }} /> <p>Menu Option 7</p>
+            <EventNoteIcon style={{ color: "gray" }} />
+            <span>Menu Option 7</span>
           </button>
         </li>
       </ul>
-      <h3>Heading 4</h3>
+      <h5>Heading 4</h5>
       <ul>
         <li>
           <button className="ListItem">
-            <EventNoteIcon style={{ color: "gray" }} /> <p>Menu Option 8</p>
+            <EventNoteIcon style={{ color: "gray" }} />
+            <span>Menu Option 8</span>
           </button>
         </li>
         <li>
           <button className="ListItem">
-            <EventNoteIcon style={{ color: "gray" }} /> <p>Menu Option 9</p>
+            <EventNoteIcon style={{ color: "gray" }} />
+            <span>Menu Option 9</span>
           </button>
         </li>
       </ul>
+      <button className="logout">
+        <EventNoteIcon style={{ color: "gray" }} />
+        <span>Logout</span>
+      </button>
     </div>
   );
 }
