@@ -1,0 +1,30 @@
+.item1 {
+  grid-area: navbar;
+  border: 1px solid green;
+}
+.item2 {
+  grid-area: sidebar;
+  margin-left: 25%;
+  width: 75%;
+  border: 1px solid red;
+}
+.item3 {
+  grid-area: center;
+  border: 1px solid blue;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "sidebar navbar navbar navbar navbar navbar navbar navbar"
+    "sidebar center center center center center center center"
+    "sidebar center center center center center center center"
+    "sidebar center center center center center center center"
+    "sidebar center center center center center center center"
+    "sidebar center center center center center center center"
+    "sidebar center center center center center center center"
+    "sidebar center center center center center center center";
+
+  grid-gap: 10px;
+  padding: 10px;
+}

@@ -1,0 +1,10 @@
+.logo {
+  margin: 1rem;
+}
+ul {
+  list-style: none;
+}
+.ListItem {
+  display: flex;
+  align-items: center;
+}

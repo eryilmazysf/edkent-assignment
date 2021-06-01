@@ -1,0 +1,45 @@
+.menu-container {
+  float: right;
+  display: flex;
+  margin: 1% 5% 0 0;
+}
+button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+.buttons {
+  margin-left: 1rem;
+}
+.name {
+  top: 5px;
+  position: relative;
+  color: #858ecc;
+  opacity: 0.5;
+}
+.profile {
+  display: flex;
+}
+.menuList {
+  border-radius: 10px;
+  width: 12rem;
+  position: relative;
+  top: 2rem;
+  right: 30%;
+}
+.menuItem {
+  display: flex;
+  align-items: center;
+}
+.menuItems {
+  border-bottom: 1px solid grey;
+}
+p {
+  margin-left: 5px;
+  width: 10rem;
+  border: 1px none;
+  word-break: break-word;
+  display: inline-block;
+}
