@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    align-items: center;
+  }
+  .subTitle {
+    display: flex;
+    align-items: center;
+  }
+  .smallTitle {
+    opacity: 0.5;
+  }
+  span {
+    padding: 5px;
+  }

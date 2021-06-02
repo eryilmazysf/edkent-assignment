@@ -26,7 +26,7 @@ button {
   border-radius: 10px;
   width: 12rem;
   position: relative;
-  top: 2rem;
+  top: 0.5rem;
   right: 30%;
 }
 .menuItem {
