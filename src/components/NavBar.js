@@ -8,15 +8,7 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import TurnedInIcon from "@material-ui/icons/TurnedIn";
 import PermDeviceInformationIcon from "@material-ui/icons/PermDeviceInformation";
-import {
-  Menu,
-  MenuList,
-  MenuButton,
-  MenuItem,
-  MenuItems,
-  MenuPopover,
-  MenuLink,
-} from "@reach/menu-button";
+import { Menu, MenuList, MenuButton, MenuItem } from "@reach/menu-button";
 import { Link } from "react-router-dom";
 import "@reach/menu-button/styles.css";
 
