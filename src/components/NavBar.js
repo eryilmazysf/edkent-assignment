@@ -17,6 +17,7 @@ import {
   MenuPopover,
   MenuLink,
 } from "@reach/menu-button";
+import { Link } from "react-router-dom";
 import "@reach/menu-button/styles.css";
 
 function NavBar() {
@@ -29,7 +30,7 @@ function NavBar() {
           <InfoIcon style={{ color: "#858ecc" }} />
         </MenuButton>
         <MenuList className="menuList">
-          <MenuItem className="menuItems" onSelect={() => alert("Menu")}>
+          <MenuItem onSelect={() => alert("Menu")}>
             <div className="menuItem">
               <TurnedInIcon style={{ color: "gray" }} /> <p>Menu Option 1</p>
             </div>
@@ -104,20 +105,26 @@ function NavBar() {
           </div>
         </MenuButton>
         <MenuList className="menuList">
-          <MenuItem className="menuItems" onSelect={() => alert("Menu")}>
-            <div className="menuItem">
-              <FavoriteIcon style={{ color: "gray" }} /> <p>Menu 1</p>
-            </div>
+          <MenuItem className="menuItems">
+            <Link to="/page1">
+              <div className="menuItem">
+                <FavoriteIcon style={{ color: "gray" }} /> <p>Menu 1</p>
+              </div>
+            </Link>
           </MenuItem>
-          <MenuItem className="menuItems" onSelect={() => alert("Menu")}>
-            <div className="menuItem">
-              <FavoriteIcon style={{ color: "gray" }} /> <p>Menu 2</p>
-            </div>
+          <MenuItem className="menuItems">
+            <Link to="/page2">
+              <div className="menuItem">
+                <FavoriteIcon style={{ color: "gray" }} /> <p>Menu 2</p>
+              </div>
+            </Link>
           </MenuItem>
-          <MenuItem className="menuItems" onSelect={() => alert("Menu")}>
-            <div className="menuItem">
-              <FavoriteIcon style={{ color: "gray" }} /> <p>Menu 3</p>
-            </div>
+          <MenuItem className="menuItems">
+            <Link to="/page3">
+              <div className="menuItem">
+                <FavoriteIcon style={{ color: "gray" }} /> <p>Menu 3</p>
+              </div>
+            </Link>
           </MenuItem>
           <div className="menuItems">
             <div style={{ alignItems: "center" }}>
