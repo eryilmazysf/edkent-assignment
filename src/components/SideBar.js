@@ -4,25 +4,25 @@ import EventNoteIcon from "@material-ui/icons/EventNote";
 
 function SideBar() {
   return (
-    <div>
+    <div className="sideBarContainer">
       <h2 className="logo">LOGO</h2>
       <hr />
       <h5>Heading 1</h5>
       <ul>
         <li>
-          <button className="ListItem">
+          <button className="ListItem" onClick={() => alert("Menu Option")}>
             <EventNoteIcon style={{ color: "gray" }} />
             <span>Menu Option 1</span>
           </button>
         </li>
         <li>
-          <button className="ListItem">
+          <button className="ListItem" onClick={() => alert("Menu Option")}>
             <EventNoteIcon style={{ color: "gray" }} />
             <span>Menu Option 2</span>
           </button>
         </li>
         <li>
-          <button className="ListItem">
+          <button className="ListItem" onClick={() => alert("Menu Option")}>
             <EventNoteIcon style={{ color: "gray" }} />
             <span>Menu Option 3</span>
           </button>
@@ -31,13 +31,13 @@ function SideBar() {
       <h5>Heading 2</h5>
       <ul>
         <li>
-          <button className="ListItem">
+          <button className="ListItem" onClick={() => alert("Menu Option")}>
             <EventNoteIcon style={{ color: "gray" }} />
             <span>Menu Option 4</span>
           </button>
         </li>
         <li>
-          <button className="ListItem">
+          <button className="ListItem" onClick={() => alert("Menu Option")}>
             <EventNoteIcon style={{ color: "gray" }} />
             <span>Menu Option 5</span>
           </button>
@@ -46,13 +46,13 @@ function SideBar() {
       <h5>Heading 3</h5>
       <ul>
         <li>
-          <button className="ListItem">
+          <button className="ListItem" onClick={() => alert("Menu Option")}>
             <EventNoteIcon style={{ color: "gray" }} />
             <span>Menu Option 6</span>
           </button>
         </li>
         <li>
-          <button className="ListItem">
+          <button className="ListItem" onClick={() => alert("Menu Option")}>
             <EventNoteIcon style={{ color: "gray" }} />
             <span>Menu Option 7</span>
           </button>
@@ -61,19 +61,19 @@ function SideBar() {
       <h5>Heading 4</h5>
       <ul>
         <li>
-          <button className="ListItem">
+          <button className="ListItem" onClick={() => alert("Menu Option")}>
             <EventNoteIcon style={{ color: "gray" }} />
             <span>Menu Option 8</span>
           </button>
         </li>
         <li>
-          <button className="ListItem">
+          <button className="ListItem" onClick={() => alert("Menu Option")}>
             <EventNoteIcon style={{ color: "gray" }} />
             <span>Menu Option 9</span>
           </button>
         </li>
       </ul>
-      <button className="logout">
+      <button className="logout ListItem" onClick={() => alert("Menu Option")}>
         <EventNoteIcon style={{ color: "gray" }} />
         <span>Logout</span>
       </button>

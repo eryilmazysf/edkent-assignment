@@ -13,7 +13,7 @@ import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: "100%",
+    width: "auto",
   },
   heading: {
     fontSize: theme.typography.pxToRem(15),

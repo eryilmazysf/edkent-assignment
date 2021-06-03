@@ -12,9 +12,10 @@ const Center = () => {
   const [visible, setVisible] = useState(false);
   const [start, setStart] = useState("");
   const [end, setEnd] = useState("");
-  console.log("start:", start);
-  console.log("end:", end);
-  //get date month and year from calendar
+  const [count, setCount] = useState(0);
+  //console.log("start:", start);
+  //console.log("end:", end);
+  /////get date month and year from calendar//////
   let rangeStart = String(start).split(" ");
   let rangeEnd = String(end).split(" ");
   let yearStart = Number(rangeStart[3]);
@@ -24,32 +25,64 @@ const Center = () => {
   let monthStart = rangeStart[1];
   let monthEnd = rangeEnd[1];
   let labelRange = [];
+  let differentMonth = [];
   let dateRange = Number(dateEnd) - Number(dateStart);
-  if (dateStart) {
+
+  // console.log("count", count);
+  // console.log("startMonth", monthStart);
+  // console.log("endMonth", monthEnd);
+
+  if (count >= 2 && monthStart === monthEnd) {
     for (let i = dateStart; i <= dateEnd; i++) {
-      labelRange.push(i);
+      labelRange.push(`${monthStart}${i}`);
     }
   }
-  //popup calendar
+
+  let monthCheck = monthStart !== monthEnd;
+  if (count >= 2 && monthCheck) {
+    for (let i = dateStart; i <= 30; i++) {
+      differentMonth.push(`${monthStart}${i}`);
+    }
+    for (let i = 1; i <= dateEnd; i++) {
+      differentMonth.push(`${monthEnd}${i}`);
+    }
+    labelRange = differentMonth;
+  }
+  //////popup calendar///////
   const handleVisibleChange = () => {
     setVisible((prev) => !prev);
   };
-  // add date informations to graph
+  // add date informations to graph///////
   const data = {
     labels: labelRange,
     datasets: [
       {
-        label: "First dataset",
-        data: [33, 53, 85, 41, 44, 65],
-        fill: true,
+        label: "Type 1",
+        data: [
+          73, 63, 85, 81, 64, 65, 73, 75, 87, 90, 95, 80, 68, 45, 84, 90, 80,
+          70, 80, 90, 70, 87, 53, 83, 85, 63, 78, 73, 90, 90,
+        ],
+        fill: false,
         backgroundColor: "rgba(75,192,192,0.2)",
         borderColor: "rgba(75,192,192,1)",
       },
       {
-        label: "Second dataset",
-        data: [33, 25, 35, 51, 54, 76],
+        label: "Type 2",
+        data: [
+          63, 45, 85, 61, 74, 76, 67, 86, 96, 75, 85, 64, 58, 77, 54, 78, 65,
+          89, 75, 54, 87, 58, 64, 90, 53, 90, 80, 75, 85, 80,
+        ],
         fill: false,
         borderColor: "#742774",
+      },
+      {
+        label: "Type 3",
+        data: [
+          53, 45, 75, 61, 74, 76, 87, 66, 86, 75, 95, 64, 68, 77, 74, 78, 65,
+          89, 75, 64, 77, 88, 64, 70, 63, 70, 80, 85, 65, 70,
+        ],
+        fill: false,
+        borderColor: "#FFA833",
       },
     ],
   };
@@ -57,7 +90,7 @@ const Center = () => {
     <div>
       <Accordian />
       <Tabs />
-      <h1 style={{ float: "left", display: "inline-block" }}>Analytics</h1>
+      <h2 style={{ float: "left", display: "inline-block" }}>Analytics</h2>
       <div className="headContainer">
         <div className="calendarContainer">
           <Popover
@@ -66,8 +99,11 @@ const Center = () => {
                 className="calendar"
                 setStart={setStart}
                 setEnd={setEnd}
+                setCount={setCount}
+                count={count}
               />
             }
+            placement="bottom"
             title="Calendar"
             trigger="click"
             visible={visible}

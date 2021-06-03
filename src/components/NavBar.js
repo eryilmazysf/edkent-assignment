@@ -24,7 +24,7 @@ function NavBar() {
   return (
     <div className="menu-container">
       {/* info section */}
-      <Menu>
+      <Menu className="menu">
         <MenuButton className="buttons">
           <InfoIcon style={{ color: "#858ecc" }} />
         </MenuButton>
@@ -57,7 +57,7 @@ function NavBar() {
         </MenuList>
       </Menu>
       {/* Notification section */}
-      <Menu>
+      <Menu className="menu">
         <MenuButton className="buttons">
           <NotificationsIcon style={{ color: "#858ecc" }} />
         </MenuButton>
@@ -93,7 +93,7 @@ function NavBar() {
         </MenuList>
       </Menu>
       {/* Profile section */}
-      <Menu>
+      <Menu className="menu">
         <MenuButton className="profile buttons">
           <div>
             <PersonIcon className="icon" style={{ color: "#858ecc" }} />
@@ -122,7 +122,7 @@ function NavBar() {
           <div className="menuItems">
             <div style={{ alignItems: "center" }}>
               <a href="#">Lorem ipsum</a>
-              <span style={{ float: "right", opacity: 0.5 }}>
+              <span style={{ float: "right", opacity: 0.5, fontSize: "10px" }}>
                 ({range}/2000)
               </span>
             </div>

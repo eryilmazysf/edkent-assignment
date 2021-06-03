@@ -1,0 +1,30 @@
+.tabsContainer {
+  margin: 3rem 1vw 5rem 1vw;
+}
+.cardContainer {
+  display: flex;
+  grid-template-columns: auto auto auto auto;
+}
+.card {
+  margin: 10px;
+}
+.circular {
+  width: 5vw;
+}
+.cardText {
+  font-size: 1vw;
+  padding: 5px;
+}
+.itemsContainer {
+  display: flex;
+  align-items: center;
+  height: 4vw;
+}
+@media only screen and (max-width: 900px) {
+  .cardText {
+    font-size: 0.8rem;
+  }
+  .tabsContainer {
+    margin: 3rem 1vw 5rem 1vw;
+  }
+}

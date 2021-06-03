@@ -1,7 +1,7 @@
 .menu-container {
   float: right;
   display: flex;
-  margin: 1% 5% 0 0;
+  margin: 1% 5% 1% 0;
 }
 button {
   background-color: Transparent;
@@ -46,4 +46,12 @@ p {
 a {
   text-decoration: none;
   color: cornflowerblue;
+}
+@media only screen and (max-width: 900px) {
+  .menu-container {
+    float: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -10,17 +10,33 @@ ul {
 }
 h5 {
   padding-left: 2rem;
+  font-size: 1vw;
 }
 .logout {
   display: flex;
   align-items: center;
-
-  padding-left: 2.5rem;
+  position: absolute;
+  bottom: 0;
 }
-@media only screen and (max-width: 740px) {
-  .container {
+span {
+  font-size: 0.8vw;
+}
+@media only screen and (max-width: 900px) {
+  .sideBarContainer,
+  .ListItem,
+  .logout {
     text-align: center;
     margin: auto;
     justify-content: center;
   }
+  h5 {
+    font-size: large;
+  }
+  span {
+    font-size: 0.8rem;
+  }
+}
+.ListItem:hover {
+  background-color: #d1d1cf;
+  border-radius: 1rem;
 }
