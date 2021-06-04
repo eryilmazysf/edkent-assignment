@@ -90,7 +90,8 @@ const Center = () => {
     <div>
       <Accordian />
       <Tabs />
-      <h2 style={{ float: "left", display: "inline-block" }}>Analytics</h2>
+
+      <h2 className="analytic">Analytics</h2>
       <div className="headContainer">
         <div className="calendarContainer">
           <Popover

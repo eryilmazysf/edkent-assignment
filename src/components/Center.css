@@ -29,8 +29,12 @@
   margin: auto;
 }
 .chartLine {
-  margin: 15rem auto;
+  margin: 15rem auto 2rem auto;
   width: 90%;
   text-align: center;
   border: 1px solid rgb(98, 100, 216);
+}
+.analytic {
+  float: left;
+  margin-left: 1vw;
 }

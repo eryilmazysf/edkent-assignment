@@ -55,7 +55,7 @@ function NavBar() {
           <NotificationsIcon style={{ color: "#858ecc" }} />
         </MenuButton>
         <MenuList className="menuList">
-          <div className="menuItems" onSelect={() => alert("Menu")}>
+          <div className="menuItems">
             <div className="menuItem">
               <PermDeviceInformationIcon style={{ color: "gray" }} />
               <p>
@@ -65,7 +65,7 @@ function NavBar() {
               </p>
             </div>
           </div>
-          <div className="menuItems" onSelect={() => alert("Menu")}>
+          <div className="menuItems">
             <div className="menuItem">
               <PermDeviceInformationIcon style={{ color: "gray" }} />
               <p>
@@ -74,7 +74,7 @@ function NavBar() {
               </p>
             </div>
           </div>
-          <div onSelect={() => alert("Menu")}>
+          <div>
             <div className="menuItem">
               <PermDeviceInformationIcon style={{ color: "gray" }} />
               <p>
@@ -97,21 +97,21 @@ function NavBar() {
           </div>
         </MenuButton>
         <MenuList className="menuList">
-          <MenuItem className="menuItems">
+          <MenuItem className="menuItems" onSelect={() => {}}>
             <Link to="/page1">
               <div className="menuItem">
                 <FavoriteIcon style={{ color: "gray" }} /> <p>Menu 1</p>
               </div>
             </Link>
           </MenuItem>
-          <MenuItem className="menuItems">
+          <MenuItem className="menuItems" onSelect={() => {}}>
             <Link to="/page2">
               <div className="menuItem">
                 <FavoriteIcon style={{ color: "gray" }} /> <p>Menu 2</p>
               </div>
             </Link>
           </MenuItem>
-          <MenuItem className="menuItems">
+          <MenuItem className="menuItems" onSelect={() => {}}>
             <Link to="/page3">
               <div className="menuItem">
                 <FavoriteIcon style={{ color: "gray" }} /> <p>Menu 3</p>
